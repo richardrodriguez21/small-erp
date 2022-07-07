@@ -10,7 +10,8 @@ class IndexController
 {
     #[Route('/', name: 'index')]
     public function index(){
-        return new Response('hello small erp');
+$x = preg_match("/^MCMP-[0-9]{10}$/", "MCP-1234567890");
+        return new Response("hello small erp {$x}");
     }
 
 }
